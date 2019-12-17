@@ -143,7 +143,10 @@ void Estimator::processImage(const map<int, vector<pair<int, Eigen::Matrix<doubl
     //ROS_DEBUG("new image coming ------------------------------------------");
     // cout << "Adding feature points: " << image.size()<<endl;
     if (f_manager.addFeatureCheckParallax(frame_count, image, td))
+    {
+        LOG(ERROR) << "Margin OLD";
         marginalization_flag = MARGIN_OLD;
+    }
     else
         marginalization_flag = MARGIN_SECOND_NEW;
 
