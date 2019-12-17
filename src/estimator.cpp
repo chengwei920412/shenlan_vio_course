@@ -148,7 +148,10 @@ void Estimator::processImage(const map<int, vector<pair<int, Eigen::Matrix<doubl
         marginalization_flag = MARGIN_OLD;
     }
     else
+    {
+        LOG(ERROR) << "Margin Second New";
         marginalization_flag = MARGIN_SECOND_NEW;
+    }
 
     //ROS_DEBUG("this frame is--------------------%s", marginalization_flag ? "reject" : "accept");
     //ROS_DEBUG("%s", marginalization_flag ? "Non-keyframe" : "Keyframe");
@@ -267,7 +270,7 @@ bool Estimator::initialStructure()
         //ROS_WARN("IMU variation %f!", var);
         if (var < 0.25)
         {
-            // ROS_INFO("IMU excitation not enouth!");
+            LOG(ERROR) << "Imu excitation not enough!";
             //return false;
         }
     }
@@ -477,10 +480,13 @@ bool Estimator::relativePose(Matrix3d &relative_R, Vector3d &relative_T, int &l)
             {
                 Vector2d pts_0(corres[j].first(0), corres[j].first(1));
                 Vector2d pts_1(corres[j].second(0), corres[j].second(1));
+                LOG(ERROR) << "pts0: " << pts_0;
+                LOG(ERROR) << "pts1: " << pts_1;
                 double parallax = (pts_0 - pts_1).norm();
                 sum_parallax = sum_parallax + parallax;
             }
             average_parallax = 1.0 * sum_parallax / int(corres.size());
+            LOG(ERROR) << "average parallax: " << average_parallax;
             if (average_parallax * 460 > 30 && m_estimator.solveRelativeRT(corres, relative_R, relative_T))
             {
                 l = i;

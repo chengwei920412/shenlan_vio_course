@@ -15,9 +15,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7211947-011e-4a7e-9b95-2f36a26c28bb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/pose_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bin/pose_output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/run_euroc" beforeDir="false" afterPath="$PROJECT_DIR$/bin/run_euroc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/estimator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimator.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -45,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/estimator.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="146" column="35" selection-start-line="146" selection-start-column="35" selection-end-line="146" selection-end-column="35" />
+            <state relative-caret-position="545">
+              <caret line="488" column="67" selection-start-line="488" selection-start-column="67" selection-end-line="488" selection-end-column="67" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -148,6 +145,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -204,12 +202,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576589764463</updated>
-      <workItem from="1576589766009" duration="4102000" />
+      <workItem from="1576589766009" duration="4536000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4102000" />
+    <option name="totallyTimeSpent" value="4536000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="960" height="1055" extended-state="4" />
@@ -239,17 +237,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/estimator.cpp</url>
-          <line>483</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
@@ -315,8 +302,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/estimator.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="146" column="35" selection-start-line="146" selection-start-column="35" selection-end-line="146" selection-end-column="35" />
+        <state relative-caret-position="545">
+          <caret line="488" column="67" selection-start-line="488" selection-start-column="67" selection-end-line="488" selection-end-column="67" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
